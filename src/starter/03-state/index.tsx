@@ -1,9 +1,20 @@
+import { useState } from 'react';
+
 function Component() {
-  return (
-    <div>
-      <h2>React & Typescript</h2>
-      <h2>State</h2>
-    </div>
-  );
+	const [text, setText] = useState<string[]>([]);
+	return (
+		<div>
+			<h2 className="mb-4">React & Typescript</h2>
+			<button
+				onClick={() => {
+					setText(['asd', 'ffd']);
+				}}
+				className="btn btn-primary"
+			>
+				Click me
+			</button>
+			{text}
+		</div>
+	);
 }
 export default Component;

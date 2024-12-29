@@ -1,11 +1,9 @@
-import Component from './starter/02-props';
+import Component from './starter/03-state';
 
 function App() {
 	return (
 		<main>
-			<Component name="Ray" id={231}>
-				<h5>I am a Child Prop</h5>
-			</Component>
+			<Component></Component>
 		</main>
 	);
 }
